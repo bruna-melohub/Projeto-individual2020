@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+:root {
+    --color-one: #000;
+    --color-two: #fff;
+    --color-three: #00ff5e;
+    --color-four: rgba(38, 167, 6, 0.679);
+    --color-five: rgba(138, 192, 122, 0.679);
+    --color-six:  rgba(0,0,0,0.5);
+  }
+
+/* ------------------------------------ menu */
+nav {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: var(--color-two);
+    
+ }
+
+.logo{
+     width: 65px;   
+ }
+
+ nav ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0px;
+    display: flex;
+ }
+ li {
+     display: inline-block;
+     margin-top: 20px;
+ }
+ li a {
+     text-decoration: none;
+     color: var(--color-one);
+     font-family: 'Poiret One', cursive;
+     font-weight: bold;
+     font-size: 23px;
+     padding: 0 25px;
+     display: inline-block;
+ }
+ .menu::after {
+     content: '';
+     display: block;
+     width: 0;
+     height: 3px;
+     background: var(--color-three);
+     transition: width .3s;
+ }
+ .menu:hover::after{
+     width: 100%;
+     transition: width .3s;
+ }
