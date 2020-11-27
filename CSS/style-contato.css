@@ -95,10 +95,11 @@ html {
     width: 40%;
     padding: 40px;
     background-color: var(--color-five);
+    box-shadow:  3px 3px 5px 2px rgba(241, 248, 207, 0.61);
 }
 .contactForm h2 {
     font-size: 30px;
-    color: var(--color-two);
+    color: var(--color-six);
     font-weight: bold;
 }
 .contactForm .inputBox {
@@ -106,6 +107,7 @@ html {
     width: 100%;
     margin-top: 10%;
 }
+
 .contactForm .inputBox input,
 .contactForm .inputBox textarea {
     background-color: var(--color-five);
@@ -142,6 +144,17 @@ html {
 .contactForm .inputBox input[type="submit"] {
     width: 100px;
     background: var(--color-three);
+    color: var(--color-six);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Poiret One', cursive;
+}
+.contactForm .inputBox input[type="submit"]:hover {
+    width: 100px;
+    background: var(--color-six);
     color: var(--color-two);
     border: none;
     cursor: pointer;

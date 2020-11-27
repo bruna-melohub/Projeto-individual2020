@@ -17,5 +17,123 @@ html {
     --color-five: rgba(138, 192, 122, 0.679);
     --color-six:  rgba(0,0,0,0.5);
   }
+
+/* PÁGINA DO CONTATO */
+
+
+.container {
+    overflow: auto;
+    padding-bottom: 130px;
 }
 
+.btn {
+    width: 100px;
+    background: var(--color-three);
+    color: var(--color-six);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Poiret One', cursive;
+    float: left;
+}
+.btn:hover {
+    width: 100px;
+    background: var(--color-six);
+    color: var(--color-two);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Poiret One', cursive;
+}
+
+.input-padrao {
+    background-color: var(--color-five);
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 15px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.pag-login {
+    background-image: url(../imagens/gaelle-marcel-yO9ZVNFbpao-unsplash.jpg);
+    background-size: cover;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.pag-login h1 {
+    margin-bottom: 40px;
+    color: var(--color-six);
+}
+
+.pag-login .input-padrao {
+    width: 50%;
+    display: inline-block;
+}
+
+.box-login {
+    display: inline-block;
+    background-color: var(--color-five);
+    box-shadow:  3px 3px 5px 2px #ccc;
+    padding: 60px 20px 0px 20px;
+    width: 400px;
+}
+
+.pag-login .btn {
+    display: block;
+    float: none;
+    margin: auto;
+}
+
+.extra {
+    margin: 10px;
+}
+
+.extra img {
+  height: 90px;
+  visibility: hidden;
+  width: 100px;
+}
+
+.extra .msg_erro {
+    background-color:  #e7b9c4; 
+    color: var(--color-six); 
+    visibility: hidden;
+}
+
+
+
+
+
+.btn-cad {
+    margin-top: 10px;
+    width: 130px;
+    background: var(--color-three);
+    color: var(--color-six);
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Poiret One', cursive;
+}
+.btn-cad:hover {
+    margin-top: 10px;
+    width: 130px;
+    background: var(--color-six);
+    color: var(--color-six);
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Poiret One', cursive;
+}
