@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boss Cactos</title>
+    <link rel="stylesheet" href="../CSS/especies.css">
+    <link rel="stylesheet" href="../CSS/menu-rodape.css">
+    <link rel="shortcut icon" href="../imagens/logoblack.png">
+    <link rel="stylesheet" href="../JS/login.js">
+    <link rel="stylesheet" href="../JS/funcoes.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body onload="verificar_autenticacao()">
+    <div class="wrap">
+        <nav>
+            <img src="../imagens/logoblack.png" class="logo" alt="">
+            <ul>
+                <li><a class="menu" href="../index.html">Home</a></li>
+                <li><a class="menu" href="especies.html">Espécies de Cactos</a></li>
+                <li><a class="menu" href="contato.html">Contato</a></li>
+            </ul>
+            <div class="nav">
+                <ul>
+                    <li>Olá, <b id="b_usuario"></b></li>
+                    <li><a href="" onclick="logoff()">LOGOUT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- -------------------------------------------  slideshow de fotos -->
+
+    <div class="container-footer">
+        <footer>
+            <div class="footer-content">
+                <img src="../imagens/logoblack.png" class="footer-logo">
+                <h2>Boss Cactos</h2>
+                <p>"Eu sei que pareço um cacto. Mas é que tenho o pé atrás, tenho medo. 
+                    Os espinhos são as minhas armas, minha defesa. Sou difícil de me abrir. 
+                    Mas te digo uma coisa, se você souber esperar, me passar segurança eu prometo que também sei dar flor."</p>
+                <ul class="redes-sociais">
+                    <li><img src="../imagens/facebook.png" alt=""></li>
+                    <li><img src="../imagens/instagram.png" alt=""></li>
+                    <li><img src="../imagens/linkedin.png" alt=""></li>
+                    <li><img src="../imagens/twitter.png" alt=""></li>
+                    <li><img src="../imagens/youtube.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy; 2020 site desenvolvido por uma aluna <span>Bandtec</span>
+                    &#128154;</p>
+            </div>
+        </footer>
+    </div>
+
+    
+</body>
+</html>
+<script>
+    let usuario;
+
+verificar_autenticacao();
+
+
+</script>

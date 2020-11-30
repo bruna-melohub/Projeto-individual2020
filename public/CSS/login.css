@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: 'Poiret One', cursive;
+}
+
+
+:root {
+    --color-one: #000;
+    --color-two: #fff;
+    --color-three: #00ff5e;
+    --color-four: rgba(38, 167, 6, 0.679);
+    --color-five: rgba(138, 192, 122, 0.679);
+    --color-six:  rgba(0,0,0,0.5);
+  }
+
+
+.container {
+    overflow: auto;
+    padding-bottom: 58px;
+}
+
+.btn {
+    width: 100px;
+    background: var(--color-three);
+    color: var(--color-six);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Poiret One', cursive;
+    float: left;
+}
+.btn:hover {
+    width: 100px;
+    background: var(--color-six);
+    color: var(--color-two);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Poiret One', cursive;
+}
+
+.input-padrao {
+    background-color: var(--color-five);
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 15px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+    font-weight: bold;
+    font-family: 'Poiret One', cursive
+}
+
+.pag-login {
+    background-image: url(../imagens/gaelle-marcel-yO9ZVNFbpao-unsplash.jpg);
+    background-size: cover;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.pag-login h1 {
+    margin-bottom: 40px;
+    color: var(--color-six);
+}
+
+.pag-login .input-padrao {
+    width: 50%;
+    display: inline-block;
+}
+
+.box-login {
+    display: inline-block;
+    background-color: var(--color-five);
+    box-shadow:  3px 3px 5px 2px #ccc;
+    padding: 60px 20px 0px 20px;
+    width: 400px;
+}
+
+.pag-login .btn {
+    display: block;
+    float: none;
+    margin: auto;
+}
+
+.extra {
+    margin: 0px 41px 0px 145px;
+}
+
+.extra img {
+  height: 90px;
+  visibility: hidden;
+  width: 100px;
+  float: left;
+}
+
+.extra .msg_erro {
+    background-color:  #e7b9c4; 
+    color: var(--color-six); 
+    visibility: hidden;
+}
+
+.btn-cad {
+    float: left;
+    margin-left: 138px;
+    margin-top: 10px;
+    text-decoration: none;
+    background: var(--color-three);
+    color: var(--color-six);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Poiret One', cursive;
+}
+.btn-cad:hover {
+    float: left;
+    margin-left: 138px;
+    margin-top: 10px;
+    background: var(--color-six);
+    color: var(--color-six);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Poiret One', cursive;
+}

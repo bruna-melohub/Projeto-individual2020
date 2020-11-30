@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boss Cactos</title>
+    <link rel="sho" href="">
+    <link rel="shortcut icon" href="../public/imagens/logoblack.png">
+    <link rel="stylesheet" href="CSS/menu-rodape.css">
+    <link rel="stylesheet" href="CSS/login.css">
+    <script src="JS/login.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <!--------------------------------------------------------- MENU -->
+
+    <div class="wrap">
+        <nav>
+            <img src="../public/imagens/logoblack.png" class="logo" alt="">
+            <ul>
+                <li><a class="menu" href="index.html">Home</a></li>
+                <li><a class="menu" href="Páginas/especies.html">Espécies de Cactos</a></li>
+                <li><a class="menu" href="Páginas/contato.html">Contato</a></li>
+                <li><a class="menu" href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <!------------------------------------------------------- conteudo da pagina de login -->
+    
+    <div class="pag-login">
+        <div class="container" >
+            <div class="box-login">
+                <h1>Login</h1>
+                <form id="form_login" method="post" onsubmit="return entrar()">
+                
+                    <input type="text" class="input-padrao" name="login" placeholder="Login">
+                    <br>
+                 
+                    <input type="password" class="input-padrao" name="senha" placeholder="Senha">
+                    <br>
+                    <button id="btn_entrar" class="btn">Entrar</button>
+                    <a href="../public/Páginas/cadastro.html" class="btn-cad">Cadastre-se</a>
+                </form>
+                <div class="extra">
+                    <div id="div_erro" class="msg_erro">
+                    </div>
+                    <img src="imagens/carregando.gif" id="img_aguarde"  >
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-footer">
+        <footer>
+            <div class="footer-content">
+                <img src="imagens/logoblack.png" class="footer-logo">
+                <h2>Boss Cactos</h2>
+                <p>"Eu sei que pareço um cacto. Mas é que tenho o pé atrás, tenho medo. 
+                    Os espinhos são as minhas armas, minha defesa. Sou difícil de me abrir. 
+                    Mas te digo uma coisa, se você souber esperar, me passar segurança eu prometo que também sei dar flor."</p>
+                <ul class="redes-sociais">
+                    <li><img src="imagens/facebook.png" alt=""></li>
+                    <li><img src="imagens/instagram.png" alt=""></li>
+                    <li><img src="imagens/linkedin.png" alt=""></li>
+                    <li><img src="imagens/twitter.png" alt=""></li>
+                    <li><img src="imagens/youtube.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy; 2020 site desenvolvido por uma aluna <span>Bandtec</span>
+                    &#128154;</p>
+            </div>
+        </footer>
+    </div>
