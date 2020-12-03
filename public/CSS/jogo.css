@@ -18,10 +18,14 @@ html {
   --color-seven: #bd441c;
   --color-eigth: #d87e60;
 }
-
+/* ------------------------------------------------------ conteudo */
 .dance-div {
-    width: 1160px;
+    width: 1060px;
     font-size: 50px;
+    text-align: center;
+}
+.dance-div span{
+    color: var(--color-seven);
 }
  .dance{
     margin-top: 60px;
@@ -87,7 +91,7 @@ html {
 }
 
 .botao-quiz {
-    margin: 130px 50px;
+    margin: 90px 50px;
     background-color: var(--color-seven);
     box-shadow: 2px 2px 10px grey;
     border-radius: 50%;
@@ -97,8 +101,7 @@ html {
     text-align: center;
     cursor: pointer;
     color:var(--color-two);
-    font-weight: bold;
-    font-size: 27px;
+    font-size: 50px;
     float: left;
     
 }
@@ -109,7 +112,7 @@ html {
 }
 
 
-/*QUIZ*/
+/* -------------------------------------------------  jogo*/
 
 #title_quiz {
     display: none;
@@ -129,7 +132,7 @@ html {
 .pergunta {
     text-align: center;
     margin: 20px 0;
-    color: rgb(65, 65, 65);
+    color: rgb(77, 77, 77);
     background-color: var(--color-eigth);
     padding: 5px;
 }
@@ -145,6 +148,7 @@ html {
     transition: all 0.5s;
     float: left;
     font-weight: bold;
+    font-size: 20px;
 }
 
 .opcao img {
@@ -163,7 +167,7 @@ html {
     color: var(--color-two);
 }
 
-/*RESULTADO DO QUIZ*/
+/* --------------------------------------------------------- resultado*/
 
 #loading {
     display: none;
@@ -194,12 +198,12 @@ html {
     font-weight: bold;
     width: 280px;
     margin-left: 660px;
-    padding: 40px;
+    padding: 27px;
     text-align: center;
     color: var(--color-one);
     background-image: url(../imagens/Fundo\ Pintado\ à\ Mão\ Abstrata\ Da\ Aguarela\ Verde\ Verde_\ Textura\ Do\ Círculo\ De\ Aquarela.jpg);
     background-size: cover;
-    font-size: 25px;
+    font-size: 22px;
 }
 .text-result-quiz a {
     text-decoration: none;

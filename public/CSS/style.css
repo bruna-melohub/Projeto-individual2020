@@ -95,7 +95,7 @@ html {
     font-family: 'Poiret One', cursive;
     font-weight: 500px;
     margin: 0 0 20px 0;
-    color: #222222;
+    color: var(--color-six);
  }
  
 .container p {
@@ -114,7 +114,7 @@ html {
     max-width: 65%;
     margin: auto;
     text-align: left;
-    background-color: white;
+    background-color: var(--color-two);
     float: left;
  }
 
