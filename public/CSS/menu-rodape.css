@@ -4,7 +4,7 @@
 :root {
     --color-one: #000;
     --color-two: #fff;
-    --color-three: #00ff5e;
+    --color-three: #0A7111;
     --color-four: rgba(38, 167, 6, 0.679);
     --color-five: rgba(138, 192, 122, 0.679);
     --color-six:  rgba(0,0,0,0.5);
@@ -13,6 +13,13 @@
 
 
 /* ------------------------------------ menu */
+#b_usuario {
+  font-size: 20px;
+  color: var(--color-four);
+  background-color: #ffffff;
+  background-image: linear-gradient(180deg, #ffffff 49%, #ebc9b675 100%);
+  border-bottom: 2px solid var(--color-three);
+}
 nav {
     position: relative;
     top: 0;
@@ -45,7 +52,7 @@ nav {
      color: var(--color-one);
      font-family: 'Poiret One', cursive;
      font-weight: bold;
-     font-size: 23px;
+     font-size: 19px;
      padding: 0 25px;
      display: inline-block;
  }

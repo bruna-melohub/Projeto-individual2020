@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="shortcut icon" href="imagens/logoblack.png">
     <link rel="stylesheet" href="CSS/menu-rodape.css">
-    <link rel="stylesheet" href="CSS/especies.css">
+    <link rel="stylesheet" href="CSS/jogo.css">
+    <script type="text/javascript" src="JS/funcoes.js"></script>
+    <script type="text/javascript" src="JS/jogo.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
@@ -18,12 +20,12 @@
     <div>
         <div class="wrap">
             <nav>
-                <img src="../public/imagens/logoblack.png" class="logo" alt="">
+                <img src="imagens/logoblack.png" class="logo" alt="">
                 <ul>
                     <li><a class="menu" href="index.html">Home</a></li>
-                    <li><a class="menu" href="Páginas/especies.html">Espécies de Cactos</a></li>
-                    <li><a class="menu" href="Páginas/contato.html">Contato</a></li>
-                    <li><a class="menu" href="Páginas/cadastro.html"> Cadastro</a></li>
+                    <li><a class="menu" href="especies.html">Espécies de Cactos</a></li>
+                    <li><a class="menu" href="contato.html">Contato</a></li>
+                    <li><a class="menu" href="cadastro.html">Cadastro</a></li>
                     <li><a class="menu" href="login.html">Login</a></li>
                 </ul>
             </nav>
@@ -31,18 +33,18 @@
     </div>
     <!----------------------------------------------- CONTEÚDO PAGINA INICIAL -->
     <div>
-        <!-- <div class="foto imagem1 parallax"> -->
-            <div class="texto_info">
-                Boss Cactos
-            </div>
 
-            <section class="galeria">
-                <img src="imagens/galeria1.jpg" class="fotos">
-                <img src="imagens/galeria2.jpg" class="fotos">
-                <img src="imagens/galeria3.jpg" class="fotos">
-                <img src="imagens/galeria4.jpg" class="fotos">
-            </section>
-        <!-- </div> -->
+        <div class="texto_info">
+            Boss Cactos
+        </div>
+
+        <section class="galeria">
+            <img src="imagens/galeria1.jpg" class="fotos">
+            <img src="imagens/galeria2.jpg" class="fotos">
+            <img src="imagens/galeria3.jpg" class="fotos">
+            <img src="imagens/galeria4.jpg" class="fotos">
+        </section>
+
         <!--------------------------------------------------- PAGE UP -->
         <div class="arrow">
             <a href="#" title="Back to Top"><span class="fas fa-angle-up"></span></a>
@@ -53,59 +55,229 @@
             <br><br>
             <div class="wrapper">
                 <div class="cards">
-                    <img src="../public/imagens/cactos/dama-da-noite.jpg" alt="">
+                    <img src="imagens/cactos/dama-da-noite.jpg" alt="">
                     <div class="infos">
                         <h4>Cacto Dama da Noite</h4>
                         <p>Suas flores são grandes, vistosas e coloridas e seus ramos são achatados e suculentos,
                             mas também podem se apresentar triangulares</p>
-                        <a href="#" class="botao">Ver Mais</a>
+                        <a href="especies.html" class="botao">Ver Mais</a>
                     </div>
                 </div>
 
                 <div class="cards">
-                    <img src="../public/imagens/cactos/ferocactos.jpg" alt="">
+                    <img src="imagens/cactos/ferocactos.jpg" alt="">
                     <div class="infos">
                         <h4>Cacto Ferocactus</h4>
                         <p>Cacto de formato arredondado tipo barril, de crescimento muito lento,
                             com a idade tomam o formato de uma coluna grossa e curta</p>
-                        <a href="#" class="botao">Ver Mais</a>
+                        <a href="especies.html" class="botao">Ver Mais</a>
                     </div>
                 </div>
 
                 <div class="cards">
-                    <img src="../public/imagens/cactos/flor-de-maio.jpg" alt="">
+                    <img src="imagens/cactos/flor-de-maio.jpg" alt="">
                     <div class="infos">
                         <h4>Cacto Flor de Maio</h4>
                         <p>Flores grandes, vistosas e de formato que lembram um camarão,
                             em diversas cores, que surgem na ponta dos ramos</p>
-                        <a href="#" class="botao">Ver Mais</a>
+                        <a href="especies.html" class="botao">Ver Mais</a>
                     </div>
                 </div>
             </div>
         </div>
-        <!--------------------------------------------------- CONTEÚDO DE CADASTRO  -->
+        <!--------------------------------------------------- CONTEÚDO DO QUIZ  -->
         <div class="foto imagem2 parallax"></div>
 
-        <div class="container">
-            <h2>ainda não se cadastrou?</h2>
-            <p>Saiba tudo soube sobre cactos se cadastrando em nosso site, lá você irá poder localizar lugares para
-                poder comprar cactos, sobre quais os cuidados com as plantas e muito mais!
-            </p>
+        <div class="container1">
 
+            <section class="apresentacao">
+                <div class="container2 flex">
+                    <div id="quadro_apr" class="texto" data-anime="left">
+                    </div>
+                    <div class="dance-div" id="iniciar_quiz">
+                        Clique em começar o quiz, e veja qual cacto mais combina com você!
+                        <img src="imagens/dance.gif" alt="" class="dance">
+
+                        <h1 onclick="startQuiz()" class="botao-quiz flex" data-anime="right">
+                            Começar o Quiz &#9658;
+                        </h1>
+                    </div>
+
+                </div>
+
+                <section id="quiz_questions">
+                    <div id="title_quiz">
+                        <h1 class="titulo-quiz flex">Qual cacto mais combina com você?</h1>
+                        <hr>
+                    </div>
+
+                    <div class="combo-questao" id="q1">
+                        <h2 class="pergunta">Qual desses cactos você mais gostou?</h2>
+
+                        <div class="flex">
+                            <div onclick="op1_1()" class="opcao"><img
+                                    src="imagens/op1.jpg">
+                            </div>
+                            <div onclick="op2_1()" class="opcao"><img
+                                    src="imagens/op2.jpg"></div>
+
+                            <div onclick="op3_1()" class="opcao"><img src="imagens/op3.jpg">
+                            </div>
+                            <div onclick="op4_1()" class="opcao"><img src="imagens/op4.jpg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="combo-questao" id="q2">
+                        <h2 class="pergunta">Se você pudesse escolher uma região para morar, qual desses seria?</h2>
+
+                        <div class="flex">
+                            <div onclick="op1_2()" class="opcao">Nordeste</div>
+                            <div onclick="op2_2()" class="opcao">Sudeste</div>
+                        </div>
+                        <div class="flex">
+                            <div onclick="op3_2()" class="opcao">Sul</div>
+                            <div onclick="op4_2()" class="opcao">Norte</div>
+                        </div>
+                    </div>
+
+                    <div class="combo-questao" id="q3">
+                        <h2 class="pergunta">Qual cor você mais gosta?</h2>
+
+                        <div class="flex">
+                            <div onclick="op1_3()" class="opcao"><img src="imagens/rosa.jpg" style="height: 70px;"></div>
+                            <div onclick="op2_3()" class="opcao"><img src="imagens/verde.jpg" style="height: 70px;"></div>
+                        </div>
+                        <div class="flex">
+                            <div onclick="op3_3()" class="opcao"><img src="imagens/amarelo.jpg" style="height: 70px;"></div>
+                            <div onclick="op4_3()" class="opcao"><img src="imagens/vermelho.jpg" style="height: 70px;"></div>
+                        </div>
+                    </div>
+
+                    <div class="combo-questao" id="q4">
+                        <h2 class="pergunta">O que você costuma fazer quando é elogiado(a)?</h2>
+
+                        <div class="flex">
+                            <div onclick="op1_4()" class="opcao">Fica com vergonha e não fala</div>
+                            <div onclick="op2_4()" class="opcao">Fica se perguntando se o elogio foi verdadeiro</div>
+                        </div>
+                        <div class="flex">
+                            <div onclick="op3_4()" class="opcao">Apenas Agradece</div>
+                            <div onclick="op4_4()" class="opcao">Elogia a pessoa de volta</div>
+                        </div>
+                    </div>
+
+                    <div class="combo-questao" id="q5">
+                        <h2 class="pergunta">Normalmente quando você é tirado do sério, você ...?</h2>
+                        <div class="flex">
+                            <div onclick="op1_5()" class="opcao">Discute com a pessoa que te deixou assim</div>
+                            <div onclick="op2_5()" class="opcao">Apenas ignora</div>
+                        </div>
+                        <div class="flex">
+                            <div onclick="op3_5()" class="opcao">Tenta se distrair</div>
+                            <div onclick="op4_5()" class="opcao">Conversa com alguém</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--RESULTADOS DO QUIZ-->
+                <section id="quiz_result">
+                    <div class="resultado-quiz" id="result1">
+                        <h1 class="title-result-quiz">Cacto Samambaia</h1>
+                        <div class="content-result-quiz flex">
+                            <div class="image-result-quiz">
+                                <img src="imagens/samanbaia.jpg">
+                            </div>
+                            <div class="text-result-quiz">
+                                <p>Você é uma pessoa bastante confiante, sincera e que sempre está falando o que lhe vem a mente, sem nem se importar com os comentários alheios.</p>
+                                <h3 class="botao-principal">
+                                    <a href="especies.html">Saber Mais</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resultado-quiz" id="result2">
+                        <h1 class="title-result-quiz">Flor de Outubro</h1>
+                        <div class="content-result-quiz flex">
+                            <div class="image-result-quiz">
+                                <img src="imagens/flordeoutubro.jpg">
+                            </div>
+                            <div class="text-result-quiz">
+                                <p>Você é uma pessoa bastante carismática, otimista e que sempre está sendo o centro das atenções por onde quer que passe, o seu jeito bem humorado de ser.
+                                </p>
+                                <h3 class="botao-principal">
+                                    <a href="especies.html">Saber Mais</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resultado-quiz" id="result3">
+                        <h1 class="title-result-quiz">Rabo de Raposa</h1>
+                        <div class="content-result-quiz flex">
+                            <div class="image-result-quiz">
+                                <img src="imagens/raposa.jpg">
+                            </div>
+                            <div class="text-result-quiz">
+                                <p>Você é uma pessoa bastante séria, paciente e que sempre está pensando muito antes de tomar as suas decisões, pois sabe das futuras consequências.
+                                </p>
+                                <h3 class="botao-principal">
+                                    <a href="especies.html">Saber Mais</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resultado-quiz" id="result4">
+                        <h1 class="title-result-quiz">Capuz de Monge</h1>
+                        <div class="content-result-quiz flex">
+                            <div class="image-result-quiz">
+                                <img src="imagens/monge.jpg">
+                            </div>
+                            <div class="text-result-quiz">
+                                <p>Você é uma pessoa de espírito jovem, extrovertida e sociável, e adora coisas
+                                    modernas.
+                                    Por onde passa, você é o centro das atenções. Você vai adorar obras do Pop Art, bora
+                                    conhecer?
+                                </p>
+                                <h3 class="botao-principal">
+                                    <a href="especies.html">Saber Mais</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resultado-quiz" id="result5">
+                        <h1 class="title-result-quiz">Barba de Velho</h1>
+                        <div class="content-result-quiz flex">
+                            <div class="image-result-quiz">
+                                <img src="imagens/velho.jpg">
+                            </div>
+                            <div class="text-result-quiz">
+                                <p>Você é uma pessoa bastante divertida, compreensiva e que sempre está demonstrando os seus sentimentos da forma que mais gosta, independente do que os outros vão pensar.
+                                </p>
+                                <h3 class="botao-principal">
+                                    <a href="especies.html">Saber Mais</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div id="loading">
+                    <div class="flex">
+                        <img src="imagens/carregando.gif">
+                    </div>
+                </div>
         </div>
-
-        <a class="pulse" href="Páginas/cadastro.html">Cadastre-se</a>
-
-        <div class="foto imagem3 parallax"></div>
         <!----------------------------------------------------- FOOTER  -->
+        <div class="foto imagem3 parallax"></div>
+
         <div class="container-footer">
             <footer>
                 <div class="footer-content">
                     <img src="imagens/logoblack.png" class="footer-logo">
                     <h2>Boss Cactos</h2>
-                    <p>"Eu sei que pareço um cacto. Mas é que tenho o pé atrás, tenho medo. 
-                        Os espinhos são as minhas armas, minha defesa. Sou difícil de me abrir. 
-                        Mas te digo uma coisa, se você souber esperar, me passar segurança eu prometo que também sei dar flor."</p>
+                    <p>"Eu sei que pareço um cacto. Mas é que tenho o pé atrás, tenho medo.
+                        Os espinhos são as minhas armas, minha defesa. Sou difícil de me abrir.
+                        Mas te digo uma coisa, se você souber esperar, me passar segurança eu prometo que também sei dar
+                        flor."</p>
                     <ul class="redes-sociais">
                         <li><img src="imagens/facebook.png" alt=""></li>
                         <li><img src="imagens/instagram.png" alt=""></li>

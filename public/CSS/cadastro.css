@@ -5,8 +5,16 @@
     margin: 0;
     padding: 0;
 }
-html {
+body {
     font-family: 'Poiret One', cursive;
+}
+b {
+    position: absolute;
+    font-family: 'Lobster Two', cursive;
+    font-size: 70px;
+    color: var(--color-one);
+    z-index: 1;
+    margin-left: 40px;
 }
 
 .container {

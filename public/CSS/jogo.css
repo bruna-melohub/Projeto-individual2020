@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: 'Poiret One', cursive;
+}
+
+:root {
+  --color-one: #000;
+  --color-two: #fff;
+  --color-three: #0A7111;
+  --color-four: rgba(38, 167, 6, 0.679);
+  --color-five: rgba(138, 192, 122, 0.679);
+  --color-six:  rgba(0,0,0,0.5);
+  --color-seven: #bd441c;
+  --color-eigth: #d87e60;
+}
+
+.dance-div {
+    width: 1160px;
+    font-size: 50px;
+}
+ .dance{
+    margin-top: 60px;
+    margin-right: 100px;
+    width: 300px;
+    float: right;
+}
+.container1 {
+    padding: 55px 0px 0px 0px;
+    width: 100%;
+    height: 600px;
+    margin: auto;
+    text-align: left;
+    float: left;
+
+ }
+ .container2 {
+    width: 80%;
+    margin: auto;
+}
+.apresentacao {
+    width: 1200px;
+    min-height: 500px;
+    position: relative;
+    margin-left: 70px;
+}
+
+.texto hr {
+    margin: 20px 0;
+}
+
+.texto-conteudo {
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+    top: 26%;
+    left: 19%;
+    width: 38%;
+    height: 300px;
+}
+
+.texto-conteudo p {
+    color: var(--color-one);
+}
+
+
+@media (max-width: 1140px) {
+    .texto-conteudo h1 {
+        font-size: 30px;
+    }
+    .moldura {
+        display: none;
+    }
+    .texto-conteudo {
+        background-color:var(--color-five);
+        border: 10px double var(--color-three);
+        padding: 40px;
+        border-radius: 10px;
+    }
+    .apresentacao .flex {
+        justify-content: space-between;
+    }
+}
+
+.botao-quiz {
+    margin: 130px 50px;
+    background-color: var(--color-seven);
+    box-shadow: 2px 2px 10px grey;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 60px;
+    text-align: center;
+    cursor: pointer;
+    color:var(--color-two);
+    font-weight: bold;
+    font-size: 27px;
+    float: left;
+    
+}
+.botao-quiz:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+/*QUIZ*/
+
+#title_quiz {
+    display: none;
+}
+
+.titulo-quiz {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: var(--color-four);
+    margin: 20px;
+}
+
+.combo-questao {
+    display: none;
+}
+
+.pergunta {
+    text-align: center;
+    margin: 20px 0;
+    color: rgb(65, 65, 65);
+    background-color: var(--color-eigth);
+    padding: 5px;
+}
+
+.opcao {
+    margin: 30px;
+    padding: 20px;
+    border: 2px solid var(--color-three);
+    border-radius: 5px;
+    width: 240px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 0.5s;
+    float: left;
+    font-weight: bold;
+}
+
+.opcao img {
+    width: 195px;
+    height: 190px;
+    object-fit: cover;
+    float: left;
+}
+
+.opcao:hover {
+    background-color: var(--color-three);
+    color: var(--color-six);
+    transform: scale(1.1);
+    float: left;
+    font-weight: bold;
+    color: var(--color-two);
+}
+
+/*RESULTADO DO QUIZ*/
+
+#loading {
+    display: none;
+    margin-top: 0px;
+    margin-left: 340px;
+}
+
+.resultado-quiz {
+    display: none;
+}
+
+.title-result-quiz {
+    text-align: center;
+    margin: 30px;
+    font-size: 40px;
+}
+
+.image-result-quiz img{
+    width: 340px;
+    height: 390px;
+    object-fit: cover;
+    border: 8px double var(--color-seven);
+    margin-left: 140px;
+    float: left;
+}
+
+.text-result-quiz {
+    font-weight: bold;
+    width: 280px;
+    margin-left: 660px;
+    padding: 40px;
+    text-align: center;
+    color: var(--color-one);
+    background-image: url(../imagens/Fundo\ Pintado\ à\ Mão\ Abstrata\ Da\ Aguarela\ Verde\ Verde_\ Textura\ Do\ Círculo\ De\ Aquarela.jpg);
+    background-size: cover;
+    font-size: 25px;
+}
+.text-result-quiz a {
+    text-decoration: none;
+    color: var(--color-six);
+    background-color: var(--color-seven);
+    padding: 3px;
+    border-radius: 5px;
+}
+.text-result-quiz a:hover {
+    transition: 1s;
+    text-decoration: none;
+    color: var(--color-one);
+    background-color: var(--color-five);
+    padding: 5px;
+    border-radius: 5px;
+}
+.botao-principal {
+    padding: 10px;
+}

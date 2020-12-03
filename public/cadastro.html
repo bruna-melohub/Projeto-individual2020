@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boss Cactos</title>
     <link rel="sho" href="">
-    <link rel="shortcut icon" href="../public/imagens/logoblack.png">
+    <link rel="shortcut icon" href="imagens/logoblack.png">
     <link rel="stylesheet" href="CSS/menu-rodape.css">
-    <link rel="stylesheet" href="CSS/login.css">
-    <script type="text/javascript" src="JS/funcoes.js"></script>
+    <link rel="stylesheet" href="CSS/cadastro.css">
     <script src="JS/login.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
@@ -31,44 +30,36 @@
         </nav>
     </div>
 
-
-    <!------------------------------------------------------- conteudo da pagina de login -->
-
+    <!-- ------------------------------------ conteudo cadastro -->
     <div class="pag-login">
         <div class="container">
             <div class="box-login">
-                <h1>Login</h1>
-                <form id="form_login" method="post" onsubmit="return entrar()">
+                <h1>Cadastre-se!</h1>
 
-                    <input type="text" class="input-padrao" name="login" placeholder="Login">
-                    <br>
+                <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+                    <label for="nome"></label>
+                    <input type="text" name="nome" class="input-padrao" autofocus="autofocus"
+                        placeholder="Nome e Sobrenome" required minlength="4">
+                    <label for="login"></label>
+                    <input type="text" name="login" class="input-padrao" placeholder="Usuário para login" required
+                        minlength="4">
+                    <label for="senha"></label>
+                    <input type="password" name="senha" class="input-padrao" placeholder="Senha" required minlength="4">
 
-                    <input type="password" class="input-padrao" name="senha" placeholder="Senha">
-                    <br>
-                    <button id="btn_entrar" class="btn">Entrar</button>
-                    <!-- <a href="cadastro.html" class="btn-cad">Cadastre-se</a> -->
+                    <input type="submit" id="btn_entrar" value="Cadastrar" class="btn">
                 </form>
-                <div class="extra">
-                    <div id="div_erro" class="msg_erro">
-                    </div>
-                    <img src="imagens/carregando.gif" id="img_aguarde">
+
+                <img src="imagens/carregando.gif" id="img_aguarde" style="display: none;" width="100px">
+
+                <div id="div_erro" class="msg_erro"
+                    style="background-color: #608b5a; color: rgb(177, 0, 0); display: none; font-weight: bold;">
+                    Erro no cadastro
                 </div>
             </div>
         </div>
     </div>
-    <!-- -----------------------------------------  -->
-
-    <div class="container-c">
-        <h2>ainda não se cadastrou?</h2>
-        <p>Saiba tudo soube sobre cactos se cadastrando em nosso site, lá você irá poder localizar lugares para
-            poder comprar cactos, sobre quais os cuidados com as plantas e muito mais!
-        </p>
-
     </div>
 
-    <a class="pulse" href="cadastro.html">Cadastre-se</a>
-
-    <!-- ------------------------------ footer -->
 
     <div class="container-footer">
         <footer>
@@ -93,3 +84,45 @@
             </div>
         </footer>
     </div>
+</body>
+
+</html>
+<script>
+    function cadastrar() {
+        aguardar();
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+
+            if (response.ok) {
+
+                window.location.href = 'login.html';
+
+            } else {
+
+                console.log('Erro de cadastro!');
+                response.text().then(function (resposta) {
+                    div_erro.innerHTML = resposta;
+                });
+                finalizar_aguardar();
+            }
+        });
+
+        return false;
+    }
+
+    function aguardar() {
+        btn_entrar.disabled = true;
+        img_aguarde.style.display = 'block';
+        div_erro.style.display = 'none';
+    }
+
+    function finalizar_aguardar() {
+        btn_entrar.disabled = false;
+        img_aguarde.style.display = 'none';
+        div_erro.style.display = 'block';
+    }
+
+</script>

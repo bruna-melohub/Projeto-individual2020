@@ -21,7 +21,14 @@ html {
     --color-eight:  #e91e28;
 }
 /* ----------------------------------- conteudo da pagina */
-
+b {
+    position: absolute;
+    font-family: 'Lobster Two', cursive;
+    font-size: 70px;
+    color: var(--color-one);
+    z-index: 1;
+    margin-left: 40px;
+}
 .contact {
     position: relative;
     min-height: 100vh;
@@ -30,7 +37,7 @@ html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url(../imagens/jude-beck-ZgDRrCQgsLc-unsplash.jpg);
+    background: url(../imagens/scott-webb-C6oPXOatFD8-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;

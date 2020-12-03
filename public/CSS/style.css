@@ -6,16 +6,17 @@
 }
 html {
     scroll-behavior: smooth;
-
+    font-family: 'Poiret One', cursive;
 }
 
 :root {
   --color-one: #000;
   --color-two: #fff;
-  --color-three: #00ff5e;
+  --color-three: #0a7111;
   --color-four: rgba(38, 167, 6, 0.679);
   --color-five: rgba(138, 192, 122, 0.679);
   --color-six:  rgba(0,0,0,0.5);
+  --color-seven: #8f2e0d;
 }
 
 /* ---------------------------------------- slide de fotos */
@@ -140,36 +141,6 @@ html {
     cursor: pointer;
   }
 
-  /* ------------------------------------------  efeito botão inscrever-se */
-
-  .pulse {
-    height: 120px;
-    width: 120px;
-    background: var(--color-four);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-two);
-    font-family: 'Poiret One', cursive;
-    font-size: 18px;
-    font-weight: bold;
-    animation: pulse 1.5s linear infinite;
-    border: 0;
-    margin-left: 80%;
-    margin-top: 17%;
-    text-decoration: none;
-    
-  }
-  @keyframes pulse {
-      0%{
-        box-shadow: 0 0 0 0 var(--color-four);
-      }
-      100%{
-        box-shadow: 0 0 0 50px var(--color-five);
-      }
-  }
-
   /*-------------------------------------------------------- cards */
 
 .wrapper {
@@ -242,7 +213,7 @@ html {
   text-decoration: none;
   padding: 0.5rem 1rem;
   background: var(--color-two);
-  color: var(--color-six);
+  color: var(--color-seven);
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
@@ -251,5 +222,6 @@ html {
 }
 .cards .infos .botao:hover {
   box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+  color: var(--color-seven);
 }
 

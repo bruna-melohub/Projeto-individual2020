@@ -14,7 +14,7 @@ function entrar() {
                 sessionStorage.login_usuario_meuapp = json.login;
                 sessionStorage.nome_usuario_meuapp = json.nome;
 
-                window.location.href = 'index.html';
+                window.location.href = 'especies.html';
             });
 
         } else {

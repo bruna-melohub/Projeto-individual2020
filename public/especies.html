@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boss Cactos</title>
+    <link rel="stylesheet" href="CSS/especies.css">
+    <link rel="stylesheet" href="CSS/menu-rodape.css">
+    <link rel="shortcut icon" href="imagens/logoblack.png">
+    <link rel="stylesheet" href="JS/login.js">
+    <script type="text/javascript" src="JS/funcoes.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<script>
+
+    let usuario;
+    verificar_autenticacao();
+
+</script>
+
+<body onload="verificar_autenticacao()">
+    <div class="wrap">
+        <nav>
+            <img src="imagens/logoblack.png" class="logo" alt="">
+            <ul>
+                <li><a class="menu" href="index.html">Home</a></li>
+                <li><a class="menu" href="especies.html">Espécies de Cactos</a></li>
+                <li><a class="menu" href="contato.html">Contato</a></li>
+                <li>Olá, <b id="b_usuario"></b></li>
+                <li><a class="menu" href="login.html" onclick="logoff()">Sair</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div>
+        <div class="container-topo">
+            <h1>CONFIRA</h1>
+            <p>Os cactos são plantas que se desenvolvem muito bem em ambiente secos.
+                Confira abaixo as espécies de cactos que eu mais amo!</p>
+        </div>
+    </div>
+
+    
+    <div class="container">
+        
+        <div class="row">
+            <div class="image">
+                <img src="imagens/cactos/dama-da-noite.jpg" alt="">
+                <div class="details">
+                    <h2>Cacto <span>Dama da Noite</span></h2>
+                    <p>
+                        <b>Nomes Populares:</b> cacto-orquídea, dama-da-noite
+                        <br>
+                        <b>Origem:</b> Originária da América Central e Brasil.
+                        <br>
+                        <b>Detalhes:</b> Suas flores são grandes, mais de 25cm e somente abrem à noite.
+                        Provavelmente porque os insetos que realizam a sua polinização são de hábito noturno.
+                    </p>
+                </div>
+            </div>
+            <div class="image">
+                <img src="imagens/cactos/ferocactos.jpg" alt="">
+                <div class="details">
+                    <h2>Cacto <span>Ferocactos</span></h2>
+                    <p>
+                        <b>Nomes Populares:</b> Ferocactos
+                        <br><br>
+                        <b>Origem:</b> Califórnia, Estados Unidos
+                        <br><br>
+                        <b>Detalhes:</b> 
+                        Algumas espécies deste gênero levam muitos anos para florescer. Os espinhos são a grande atração deste cacto.
+                    </p>
+
+                </div>
+            </div>
+            <div class="image">
+                <img src="imagens/cactos/flor-de-maio.jpg" alt="">
+                <div class="details">
+                    <h2>Cacto <span>Flor de Maio</span></h2>
+                    <p>
+                        <b>Nomes Populares:</b> Cacto de Natal
+                        <br><br>
+                        <b>Origem:</b> Brasil
+                        <br><br>
+                        <b>Detalhes:</b> 
+                        Tem cerca de 30 cm de altura e não apresenta espinhos
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="image">
+                <img src="imagens/cactos/estrela.jpg" alt="">
+                <div class="details">
+                    <h2>Cacto <span>Estrela</span></h2>
+                    <p><b>Nomes Populares:</b> Estapélia, flor-estrela
+                        <br><br>
+                        <b>Origem:</b> África do Sul
+                        <br><br>
+                        <b>Detalhes:</b> 
+                        Seu cheiro repugnante não costuma ser um problema para seres humanos se o vaso for mantido em local arejado — portanto, nada de cultivá-la dentro de casa.
+                    </p>
+
+                </div>
+            </div>
+            <div class="image">
+                <img src="imagens/cactos/rabo-sereia.jpg" alt="">
+                <div class="details">
+                    <h2>Cacto <span>Rabo de Sereia</span></h2>
+                    <p><b>Nomes Populares:</b> rabo de peixe
+                        <br><br>
+                        <b>Origem:</b> África do Sul
+                        <br><br>
+                        <b>Detalhes:</b> 
+                        Gosta de pleno sol ou meia sombra, de solo que possua bom dreno, sem água em excesso.
+                    </p>
+
+                </div>
+            </div>
+            <div class="image">
+                <img src="imagens/cactos/parafuso.jpg" alt="">
+                <div class="details">
+                    <h2>Cacto <span>Parafuso</span></h2>
+                    <p><b>Nomes Populares:</b> Parafuso
+                        <br><br>
+                        <b>Origem:</b> America do Sul
+                        <br><br>
+                        <b>Detalhes:</b> 
+                        Se desenvolve naturalmente, na forma espiral. A espiral pode ser no sentido horário ou anti-horário, numa mesma planta. As razões para esta diversificação não são conhecidas.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <div class="container-meio">
+        </div>
+    </div>
+
+    
+    <div class="container">
+        
+        <div class="row">
+            <div class="image">
+                <img src="imagens/cactos/mandacaru.jpg" alt="">
+                <div class="details">
+                    <h2>Cacto <span>Mandacaru</span></h2>
+                    <p><b>Nomes Populares:</b> Cardeiro e Jamacaru
+                        <br><br>
+                        <b>Origem:</b> Brasil
+                        <br><br>
+                        <b>Detalhes:</b> 
+                        Por ser uma planta resistente, exige poucos cuidados porque tem uma grande capacidade adaptativa. Para que ele cresça saudável em vaso, basta adubá-lo esporadicamente (a cada 10 ou 15 dias) e mantê-la sob o sol.
+                    </p>
+
+                </div>
+            </div>
+            <div class="image">
+                <img src="imagens/cactos/monstro.jpg" alt="">
+                <div class="details">
+                    <h2>Cacto <span>Monstro</span></h2>
+                    <p><b>Nomes Populares:</b> Cacto do Peru
+                        <br><br>
+                        <b>Origem:</b> América do Sul
+                        <br><br>
+                        <b>Detalhes:</b> 
+                        Os espinhos são pardos e se reúnem em número variável em auréolas ao longo das cristas das hastes.
+                    </p>
+
+                </div>
+            </div>
+            <div class="image">
+                <img src="imagens/cactos/rabo-de-macaco.jpg" alt="">
+                <div class="details">
+                    <h2>Cacto <span>Rabo de Macaco</span></h2>
+                    <p><b>Nomes Populares:</b> Rabo de Macaco
+                        <br><br>
+                        <b>Origem:</b> Bolívia
+                        <br><br>
+                        <b>Detalhes:</b> 
+                        Na grande maioria eles são globosos ou eretos. Essa espécie é indicada para jardins verticais e "telhados verdes", ou para vasos suspensos onde chamam muito a atenção com seus ramos que podem atingir até 2 metros. 
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="image">
+                <img src="imagens/cactos/sianinha.jpg" alt="">
+                <div class="details">
+                    <h2>Cacto <span>Sianinha</span></h2>
+                    <p><b>Nomes Populares:</b> Sianinha
+                        <br><br>
+                        <b>Origem:</b> México
+                        <br><br>
+                        <b>Detalhes:</b> 
+                        É cultivada como ornamental por causa de suas flores noturnas e caules incomuns, semelhantes a folhas. </p>
+
+                </div>
+            </div>
+            <div class="image">
+                <img src="imagens/cactos/orquidea.jpg" alt="">
+                <div class="details">
+                    <h2>Cacto <span>Orquidea Vermelha</span></h2>
+                    <p><b>Nomes Populares:</b> Ferocactos
+                        <br><br>
+                        <b>Origem:</b> Nativo da América Central
+                        <br><br>
+                        <b>Detalhes:</b> 
+                        Como na Natureza a planta fica protegida pelas copas das grandes árvores, o ideal é mantê-la sempre à meia-sombra, em substrato bem drenado e levemente ácido – preferencialmente uma mistura entre fibra de coco e esfagno.</p>
+
+                </div>
+            </div>
+            <div class="image">
+                <img src="imagens/cactos/medusa.jpg" alt="">
+                <div class="details">
+                    <h2>Cacto <span>Cabeça da Medusa</span></h2>
+                    <p><b>Nomes Populares:</b> Cabeça da Medusa
+                        <br><br>
+                        <b>Origem:</b> México
+                        <br><br>
+                        <b>Detalhes:</b> 
+                        A cabeça-de-medusa produz uma seiva quando seus tentáculos são cortados ou rasgados. Esta seiva pode causar graves reações alérgicas em algumas pessoas e pode também causar queimadura na pele.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <div class="container-fim">
+        </div>
+    </div>
+
+    <div class="container-footer">
+        <footer>
+            <div class="footer-content">
+                <img src="imagens/logoblack.png" class="footer-logo">
+                <h2>Boss Cactos</h2>
+                <p>"Eu sei que pareço um cacto. Mas é que tenho o pé atrás, tenho medo.
+                    Os espinhos são as minhas armas, minha defesa. Sou difícil de me abrir.
+                    Mas te digo uma coisa, se você souber esperar, me passar segurança eu prometo que também sei dar
+                    flor."</p>
+                <ul class="redes-sociais">
+                    <li><img src="imagens/facebook.png" alt=""></li>
+                    <li><img src="imagens/instagram.png" alt=""></li>
+                    <li><img src="imagens/linkedin.png" alt=""></li>
+                    <li><img src="imagens/twitter.png" alt=""></li>
+                    <li><img src="imagens/youtube.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy; 2020 site desenvolvido por uma aluna <span>Bandtec</span>
+                    &#128154;</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
